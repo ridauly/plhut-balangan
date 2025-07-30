@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Layanan Haji</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e6f2ec, #ffffff);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #2e8b57;
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+      flex-grow: 1;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .menu-container a {
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+
+    .menu-item i {
+      font-size: 2.8rem;
+      color: #2e8b57;
+      margin-bottom: 1rem;
+    }
+
+    .menu-item span {
+      display: block;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Menu Layanan Haji</h1>
+  </header>
+
+  <div class="menu-container">
+    <a href="https://balangan.kemenag.go.id/" class="menu-item" target="_blank">
+      <i class="fas fa-kaaba"></i>
+      <span>Informasi Haji</span>
+    </a>
+    <a href="https://balangan.kemenag.go.id/" class="menu-item" target="_blank">
+      <i class="fas fa-passport"></i>
+      <span>Dokumen</span>
+    </a>
+    <a href="https://balangan.kemenag.go.id/" class="menu-item" target="_blank">
+      <i class="fas fa-suitcase-rolling"></i>
+      <span>Perlengkapan</span>
+    </a>
+    <a href="https://balangan.kemenag.go.id/" class="menu-item" target="_blank">
+      <i class="fas fa-bus-alt"></i>
+      <span>Transportasi</span>
+    </a>
+    <a href="https://balangan.kemenag.go.id/" class="menu-item" target="_blank">
+      <i class="fas fa-mosque"></i>
+      <span>Manasik</span>
+    </a>
+    <a href="https://balangan.kemenag.go.id/" class="menu-item" target="_blank">
+      <i class="fas fa-praying-hands"></i>
+      <span>Doa-Doa</span>
+    </a>
+    <a href="https://balangan.kemenag.go.id/" class="menu-item" target="_blank">
+      <i class="fas fa-hands-helping"></i>
+      <span>Bantuan</span>
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 Kemenag Balangan. Semua hak dilindungi.
+  </footer>
+
+</body>
+</html>
