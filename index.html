@@ -31,14 +31,14 @@
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     .menu-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-      padding: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      padding: 1.5rem;
       flex-grow: 1;
       max-width: 1000px;
       margin: auto;
@@ -52,34 +52,57 @@
 
     .menu-item {
       background: white;
-      border-radius: 20px;
-      padding: 2rem 1rem;
+      border-radius: 16px;
+      padding: 1.5rem 1rem;
       text-align: center;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .menu-item:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
     }
 
     .menu-item i {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       color: #2e8b57;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
 
     .menu-item span {
       display: block;
       font-weight: 600;
-      font-size: 1.1rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .menu-container {
+        padding: 1rem;
+        gap: 12px;
+      }
+
+      .menu-item {
+        padding: 1.25rem 0.75rem;
+      }
+
+      .menu-item i {
+        font-size: 1.8rem;
+      }
+
+      .menu-item span {
+        font-size: 0.95rem;
+      }
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #888;
     }
   </style>
